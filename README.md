@@ -135,6 +135,13 @@ Iref = 0.277mA<br>
 
 ![image](https://github.com/user-attachments/assets/bf1c3c97-b19d-421f-bf7b-ecfe5a889c9d)
 
+### Tabular column:
+|  Length  |  3dB Gain   |  3dB Bandwidth   | 
+|----------|-------------|------------------|
+|   180nm  |    27dB     |   265.185MHz     |
+|   500nm  |    36dB     |   52.4645MHz     |     
+|    1um   |    35.75dB  |   39.4948MHz     |   
+
 
 
 
