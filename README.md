@@ -371,6 +371,88 @@ M6 = W=141um<br>
 Vout= 1.22711V<br>
 Iref = 0.25mA<br>
 
+### Tabular column:  
+|  Length  |                       Width                   |  V<sub>out</sub> | I<sub>ref</sub>  |
+|----------|-----------------------------------------------|------------------|------------------|
+|   180nm  | M1,M2=70um,M3, M4 =238.7um,M5 =70um, M6=140um |      1.39017V    |  0.277mA         |
+|   500nm  | M1,M2=70um,M3, M4 =693.6um,M5 =70um, M6=140um |      1.32674V    |  0.277mA         |
+|    1um   | M1,M2=70um,M3, M4 =223.35um,M5 =70um, M6=141um|      1.22711V    |  0.277mA         |
+
+<br>
+
+### Transient analysis:
+1.Case 1: 180nm
+![Image](https://github.com/user-attachments/assets/d1f8f534-fc52-464d-ab68-8d3d93f859bc)
+* Peak to Peak volatge = 2.7794V
+
+<br>
+
+2.Case 2: 500nm
+![Image](https://github.com/user-attachments/assets/a0826da1-a2b2-4ee3-a1e5-16af57cfee7f)
+* Peak to Peak volatge = 2.653V
+
+<br>
+
+3.Case 3: 1um
+![Image](https://github.com/user-attachments/assets/ec39f371-69f9-4b0f-a4f9-3be8f3c5e2fe)
+* Peak to Peak volatge = 2.453V
+
+<br>
+
+**AC Analysis**
+
+**Case1: L=180nm**
+
+![image](https://github.com/user-attachments/assets/05e59b5e-1bb7-4c3e-8546-3b97af403e4f)
+
+**Case2: L=500nm**
+
+![image](https://github.com/user-attachments/assets/b8df9811-afb7-497a-854b-2b6dbc7f8b3d)
+
+**Case3: L=1um**
+
+![image](https://github.com/user-attachments/assets/71a34027-d92b-491f-b277-06777f207e9e)
+
+### Tabular column:
+|  Length  |  3dB Gain   |  3dB Bandwidth   | 
+|----------|-------------|------------------|
+|   180nm  |  32dB       |   107.9033MHz    |
+|   500nm  |  41.131dB   |   17.075083MHz   |     
+|    1um   |  43.32dB    |   24.278305MHz   |   
+
+### Inference:
+
+1.DC Analysis:
+* As the transistor length increases, the output voltage (Vout) decreases.
+* This happens because longer channel lengths increase the resistance, affecting the current flow and voltage distribution.
+* Reference current (Iref) remains constant (0.277mA) across different lengths.
+* This shows that the current source (M5 & M6) is properly designed to maintain a steady bias.
+
+<br>
+
+2.Transient Analysis:
+* Peak-to-peak voltage (Vpp) decreases with increasing transistor length.
+* Longer transistors have higher parasitic capacitances, which slow down the signal response, reducing output swing.
+* Shorter channel transistors (180nm) provide better signal swings, making them preferable for high-speed applications.
+
+<br>
+
+
+3.AC Analysis:
+* 3dB Gain increases as transistor length increases.
+180nm → 32dB\
+500nm → 41.13dB\
+1µm → 43.32dB\
+* Longer transistors reduce channel-length modulation, leading to better gain performance.
+* Bandwidth decreases with increasing transistor length.
+180nm → 107.9MHz\
+500nm → 17.08MHz\
+1µm → 24.28MHz\
+* Shorter transistors have lower capacitance, allowing higher frequencies to pass, resulting in a wider bandwidth.
+
+
+
+
 
 
 
