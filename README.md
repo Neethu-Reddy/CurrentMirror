@@ -232,6 +232,63 @@ Iref = 0.185mA<br>
 |    1um   | Pmos= 70u,140u; Nmos=307.294um  |    1.07969V      |     1.08026V    | 0.185mA : 0.37mA |
 
 
+### Transient analysis:
+1.Case 1: 180nm
+![Image](https://github.com/user-attachments/assets/8c284faf-3cc2-4d40-9825-6c3828aaa47a)
+* Peak to Peak volatge = 2.39V
+* Maximum output swing = Vdd-Vov2+Vov3 = 1.8-(-0.00847-0.36)+(0.5-0.36)= 2.30V
+
+<br>
+
+2.Case 2: 500nm
+![Image](https://github.com/user-attachments/assets/cc6165a4-5622-4568-9bfb-d315660a3fa5)
+* Peak to Peak volatge = 2.25V
+* Maximum output swing = Vdd-Vov2+Vov3 = 1.8-(-0.0015-0.36)+(0.5-0.36)= 2.3015V
+
+<br>
+
+3.Case 3: 1um
+![Image](https://github.com/user-attachments/assets/a12f8b4f-703c-4cd3-b717-5f2250123bd7)
+* Peak to Peak volatge = 2.048V
+* Maximum output swing = Vdd-Vov2+Vov3 = 1.8-(0.000575-0.36)+(0.5-0.36)= 2.2V
+
+**AC Analysis**
+
+**Case1: L=180nm**
+
+![image](https://github.com/user-attachments/assets/ea2618e0-da4a-4a6f-95ee-af6b53ba7797)
+
+**Case2: L=500nm**
+
+![image](https://github.com/user-attachments/assets/56836cda-08f7-42b5-8145-de4371921a0b)
+
+**Case3: L=1um**
+
+![image](https://github.com/user-attachments/assets/b73e1d20-887a-4a82-81c3-f4c481417005)
+
+### Tabular column:
+|  Length  |  3dB Gain   |  3dB Bandwidth   | 
+|----------|-------------|------------------|
+|   180nm  |  26.212dB   |   105.81654MHz   |
+|   500nm  |  34.71dB    |   29.731326MHz   |     
+|    1um   |  37dB       |   18.6247MHz     |   
+
+### Inference:
+* Reference current is copied or mirrored for other two mosfets.The output currentis exactly equal to the reference current.
+* The output current remains the same regardless of the connected load, as long as the transistor stays in the saturation region
+* V<sub>x</sub> and V<sub>out</sub> will be same when current gets mirrored.
+* As length increases V<sub>x</sub> and V<sub>out</sub> decreases.
+* As gain increases bandwidth decreases.
+* As the refence current is 0.277mA and doing 1:2 ratio of current mirroring the Current must be copied of the same that is in the form of 0.185mA : 0.37mA..
+* In transient analysis we see the maximum output swing caused.
+
+<br>
+
+
+
+
+
+
 
 
 
