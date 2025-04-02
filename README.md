@@ -328,8 +328,8 @@ PMOSFET-2, NMOSFET- 4, supply volatage-4, current source-1, ground, wires.
 
 ### Calculation:
 * P=1mW
-* I<sub>total</sub> = P/V = 1mW/2V  <table><td>=0.5mA</td><table>
-* I<sub>D1</sub> = I<sub>D2</sub> = I<sub>total</sub>/2 = I<sub>ref</sub> <table><td>=0.25mA</td><table> 
+* I<sub>total</sub> = P/V = 1mW/2V =0.5mA
+* I<sub>D1</sub> = I<sub>D2</sub> = I<sub>total</sub>/2 = I<sub>ref</sub> =0.25mA 
 * V<sub>DD</sub>= 2V
 * V<sub>inCM</sub>=1V
 
@@ -340,7 +340,41 @@ PMOSFET-2, NMOSFET- 4, supply volatage-4, current source-1, ground, wires.
 
 **Case1: L=180nm**
 
-![image](https://github.com/user-attachments/assets/e52229ba-eaa1-40a0-94f2-b0695f00b4ef)
+![image](https://github.com/user-attachments/assets/aea7b5a7-8737-45f3-995e-f24d66f7294a)
+
+M1,M2 = W=70um<br>
+M3, M4 = W=238.7um<br>
+M5 = W=70um<br>
+M6 = W=140um<br>
+Vout= 1.39017V<br>
+Iref = 0.25mA<br>
+
+**Case2: L=500nm**
+
+![image](https://github.com/user-attachments/assets/be0faebb-3794-4c5a-9957-c1fb1efeff5f)
+
+M1,M2 = W=70um<br>
+M3, M4 = W=693.6um<br>
+M5 = W=70um<br>
+M6 = W=140um<br>
+Vout= 1.32674V<br>
+Iref = 0.25mA<br>
+
+**Case3: L=1um**
+
+![image](https://github.com/user-attachments/assets/c339416a-c664-4552-829e-9c10810129d4)
+
+M1,M2 = W=70um<br>
+M3, M4 = W=223.35um<br>
+M5 = W=70um<br>
+M6 = W=141um<br>
+Vout= 1.22711V<br>
+Iref = 0.25mA<br>
+
+
+
+
+
 
 
 
