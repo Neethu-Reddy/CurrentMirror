@@ -97,6 +97,31 @@ Iref = 0.277mA<br>
 |    1um   | Pmos= 10u; Nmos=251.54u    |    0.293177V     |     0.293193V    |    0.277mA       |
 
 
+### Transient analysis:
+1.Case 1: 180nm
+![Image](https://github.com/user-attachments/assets/893a38ab-0455-4193-8bb9-052746ef2e42)
+* Peak to Peak volatge = 1.934V
+* Maximum output swing = Vdd-Vov2+Vov3 = 1.8-(-0.00847-0.36)+(0.5-0.36)= 2.29V
+
+<br>
+
+2.Case 2: 500nm
+![Image](https://github.com/user-attachments/assets/8786450e-c70e-4efd-8edf-bf6ba5d635ee)
+* Peak to Peak volatge = 1.28V
+* Maximum output swing = Vdd-Vov2+Vov3 = 1.8-(-0.00000907-0.36)+(0.5-0.36)= 2.29V
+
+<br>
+
+3.Case 3: 1um
+![Image](https://github.com/user-attachments/assets/e58a1237-fc27-4672-a463-ea0b2869f16f)
+* Peak to Peak volatge = 0.607V
+* Maximum output swing = Vdd-Vov2+Vov3 = 1.8-(0.0000165-0.36)+(0.5-0.36)= 2.29V
+
+<br>
+
+
+
+
 
 
 
