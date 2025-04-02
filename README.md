@@ -142,6 +142,73 @@ Iref = 0.277mA<br>
 |   500nm  |    36dB     |   52.4645MHz     |     
 |    1um   |    35.75dB  |   39.4948MHz     |   
 
+### Inference:
+* Reference current is copied or mirrored for other two mosfets.The output currentis exactly equal to the reference current.
+* The output current remains the same regardless of the connected load, as long as the transistor stays in the saturation region
+* V<sub>x</sub> and V<sub>out</sub> will be same when current gets mirrored.
+* As length increases V<sub>x</sub> and V<sub>out</sub> decreases.
+* As gain increases bandwidth decreases.
+* As the refence current is 0.277mA and doing 1:1 ratio of current mirroring the Current must be copied of the same that is 0.277mA.
+* In transient analysis we see the maximum output swing caused.
+  
+<br>
+
+**Case 2** : 1:2 Current mirror
+
+**Circuit Diagram**
+
+![image](https://github.com/user-attachments/assets/b01a18f4-acf8-4eed-89cd-59b2a3a33c39)
+
+
+
+
+### Components :
+PMOSFET-2, NMOSFET- 1, supply volatage-2, current source-1.
+
+### Procedure:
+
+1. Build the circuit as per the circuit diagram using LTspice.
+2. Set the Vdd as 1.8V.
+3. Download the library file.
+4. Create a folder. Save the library file and LTspice file to the folder.
+5. Import the library file to LTspice using spice directive(.op).
+6. Find the current value for the given power rating.
+7.  Set the mosfet model name CMOSN for NMOSFET and CMOSP for PMOSFET as given in the library file, length as 180nm and vary the width  of NMOSFET till you get the exact Q point. Set the gate volatge of NMOSFET as 0.5V. 
+8. DC analysis: In edit simulation option, change to dc offset to get list of values obtained from the circuit. We should get the calculated current value in the simulation result.So that we need to vary the value of width since width is directly proportional to Drain current(Id) keeping other parameters constant. Since we are doing current mirroring the current of both mosfets should be same as the reference current even the output also should match too. 
+9. Transient analysis: In edit simulation option, change from dc offset to transient. Set the dc offset as 0.5V, Amplitude 5mV, frequency 1KHz. Keep stop time for 3ms and run to get the expected waveform.Find the maximum output swing.
+10. AC analysis : In edit simulation option, change from transient to ac analysis. Set type of sweep as decade, number of points per decade as 20, start and stop frequency as 0.1Hz and 1THz to get the expected ac waveform. Note down the 3dB gain of the circuit and its bandwidth.
+
+<br>
+
+### Calculations:
+* Power <= 1mW
+* Vdd = 1.8V
+* I<sub>total</sub> = power/Vdd = 1mW/1.8 = 55.5mA
+* I<sub>D</sub>= I<sub>total</sub>/3 = 0.185mA.
+* 1:2 ratio = 0.185mA : 0.37mA.
+
+<br>
+
+**DC Analysis**
+
+**Case1: L=180nm**
+
+![image](https://github.com/user-attachments/assets/67e85fca-e352-426f-95a9-46577e0b2540)
+
+PMOS1 : L=180nm ; W=70um 
+PMOS2 : L=180nm ; W=140um 
+NMOS11 = L=180nm ; W=135.867um
+Vout= 1.20094V
+Vx= 1.20934V
+Iref = 0.185mA
+
+<br>
+
+
+
+
+
+
 
 
 
