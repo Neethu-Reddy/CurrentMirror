@@ -195,14 +195,41 @@ PMOSFET-2, NMOSFET- 1, supply volatage-2, current source-1.
 
 ![image](https://github.com/user-attachments/assets/67e85fca-e352-426f-95a9-46577e0b2540)
 
-PMOS1 : L=180nm ; W=70um 
-PMOS2 : L=180nm ; W=140um 
-NMOS11 = L=180nm ; W=135.867um
-Vout= 1.20094V
-Vx= 1.20934V
-Iref = 0.185mA
+PMOS1 : L=180nm ; W=70um <br>
+PMOS2 : L=180nm ; W=140um <br>
+NMOS11 = L=180nm ; W=135.867um<br>
+Vout= 1.20094V<br>
+Vx= 1.20934V<br>
+Iref = 0.185mA<br>
 
-<br>
+**Case2: L=500nm**
+
+![image](https://github.com/user-attachments/assets/9933d048-8018-4425-96f5-ccad2766e0c2)
+
+PMOS1 : L=500nm ; W=70um <br>
+PMOS2 : L=500nm ; W=140um <br>
+NMOS11 = L=500nm ; W=256.773um<br>
+Vout= 1.15935V<br>
+Vx= 1.16085V<br>
+Iref = 0.185mA<br>
+
+**Case3: L=1um**
+
+![image](https://github.com/user-attachments/assets/26d90c6d-2801-4836-9b6f-e216e46c4044)
+
+PMOS1 : L=1um ; W=70um <br>
+PMOS2 : L=1um ; W=140um <br>
+NMOS11 = L=1um ; W=307.294um<br>
+Vout= 1.08026V<br>
+Vx= 1.07969V<br>
+Iref = 0.185mA<br>
+
+### Tabular column:
+|  Length  |                Width            |   V<sub>x</sub>  | V<sub>out</sub> | I<sub>ref</sub>  |
+|----------|---------------------------------|------------------|-----------------|------------------|
+|   180nm  | Pmos= 70u,140u; Nmos=135.867um  |     1.20934V     |     1.20094V    | 0.185mA : 0.37mA |
+|   500nm  | Pmos= 70u,140u; Nmos=256.773um  |     1.16085V     |     1.15935V    | 0.185mA : 0.37mA |
+|    1um   | Pmos= 70u,140u; Nmos=307.294um  |    1.07969V      |     1.08026V    | 0.185mA : 0.37mA |
 
 
 
