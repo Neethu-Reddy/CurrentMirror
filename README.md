@@ -284,6 +284,64 @@ Iref = 0.185mA<br>
 
 <br>
 
+**Part B**
+
+Aim : Design the diffrential amplifier having VDD=2V, P<=1mW, Vicm =1V as per the 3rd experiment and perform DC, Transient , AC analysis.<br>
+
+**Circuit Diagram**
+
+![image](https://github.com/user-attachments/assets/1fef8fe8-3a71-4f2f-bda6-1a5d518acbf7)
+
+### Components:
+PMOSFET-2, NMOSFET- 4, supply volatage-4, current source-1, ground, wires.
+
+### Circuit overview:
+1.Differential Pair (M3, M4):
+* M3 and M4 form a differential pair using NMOS transistors.
+* They receive differential input signals and control the output voltage.
+
+<br>
+
+2.Active Load (M1, M2):
+* M1 and M2 are PMOS transistors serving as a current mirror load.
+* This helps in converting the differential input signal into a single-ended output.
+
+<br>
+
+3.Current Source (M5, M6, I1):
+* M6 is an NMOS transistor acting as a current source to bias the differential pair.
+* I1 (0.25 mA) sets the tail current, ensuring proper operation.
+
+<br>
+
+4.Biasing Voltages (V1, V2, V3, V5):
+* V1 and V2 (1V) provide gate biasing for M3 and M4.
+* V3 and V5 (2V) power the PMOS transistors and ensure proper operation.
+
+<br>
+  
+5.Output (Vout):
+* The output is taken from the common node of M2 and M4.
+* It provides an amplified voltage signal.
+
+<br>
+
+### Calculation:
+* P=1mW
+* I<sub>total</sub> = P/V = 1mW/2V  <table><td>=0.5mA</td><table>
+* I<sub>D1</sub> = I<sub>D2</sub> = I<sub>total</sub>/2 = I<sub>ref</sub> <table><td>=0.25mA</td><table> 
+* V<sub>DD</sub>= 2V
+* V<sub>inCM</sub>=1V
+
+<br>
+
+
+**DC Analysis**
+
+**Case1: L=180nm**
+
+![image](https://github.com/user-attachments/assets/e52229ba-eaa1-40a0-94f2-b0695f00b4ef)
+
 
 
 
