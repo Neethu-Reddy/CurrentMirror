@@ -81,6 +81,23 @@ Iref = 0.277mA<br>
 
 **Case3: L=1um**
 
+![image](https://github.com/user-attachments/assets/64cc84bd-2a38-4fa7-b661-7cb1085f037a)
+
+PMOSFET = length is 1um, width is 10um<br>
+NMOSFET = length is 1um, width is 251.54um<br>
+Vout= 0.293193V<br>
+Vx= 0.293177V<br>
+Iref = 0.277mA<br>
+
+### Tabular column:
+|  Length  |            Width           |   V<sub>x</sub>  | V<sub>out</sub>  |   I<sub>ref</sub>|
+|----------|----------------------------|------------------|------------------|------------------|
+|   180nm  | Pmos= 10u; Nmos=114.025u   |    0.967276V     |     0.967276V    |    0.277mA       |
+|   500nm  | Pmos= 10u; Nmos=207.617u   |    0.644703V     |     0.644713V    |    0.277mA       |
+|    1um   | Pmos= 10u; Nmos=251.54u    |    0.293177V     |     0.293193V    |    0.277mA       |
+
+
+
 
 
 
