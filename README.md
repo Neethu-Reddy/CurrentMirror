@@ -57,7 +57,35 @@ Therefore, Iref = 0.2777 mA.<br>
 
 **Case 1** : 1:1 Current mirror
 
-**1) L=180nm**
+**DC Analysis**
+
+**Case1: L=180nm**
+
+![image](https://github.com/user-attachments/assets/a1535d9c-6d99-4b9c-ba5f-d2426fd1cf0a)
+
+PMOSFET = length is 180nm, width is 10um<br>
+NMOSFET = length is 180nm, width is 114.025um<br>
+Vout= 0.967276V<br>
+Vx= 0.967276V<br>
+Iref = 0.277mA<br>
+
+**Case2: L=500nm**
+
+![image](https://github.com/user-attachments/assets/354efa5e-5c73-4d02-8e1d-c088b09389ce)
+
+PMOSFET = length is 500nm, width is 10um<br>
+NMOSFET = length is 500nm, width is 207.617um<br>
+Vout= 0.644713V<br>
+Vx= 0.644703V<br>
+Iref = 0.277mA<br>
+
+**Case3: L=1um**
+
+
+
+
+
+
 
 
 
