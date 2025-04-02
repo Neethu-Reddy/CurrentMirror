@@ -38,6 +38,8 @@ Av>-10 V/V.<br>
 
 ## Circuit Diagram
 
+![image](https://github.com/user-attachments/assets/167561c9-0a57-4d65-a12b-2ca899f4a9aa)
+
 
 
 **Calculation**:
@@ -118,6 +120,29 @@ Iref = 0.277mA<br>
 * Maximum output swing = Vdd-Vov2+Vov3 = 1.8-(0.0000165-0.36)+(0.5-0.36)= 2.29V
 
 <br>
+
+**AC Analysis**
+
+**Case1: L=180nm**
+
+![image](https://github.com/user-attachments/assets/e65eaa39-9538-4e5a-871b-2ca23bd946be)
+
+**Case2: L=500nm**
+
+![image](https://github.com/user-attachments/assets/705948fc-6a9c-4c6f-ba5c-ef047f418ec7)
+
+**Case3: L=1um**
+
+![image](https://github.com/user-attachments/assets/bf1c3c97-b19d-421f-bf7b-ecfe5a889c9d)
+
+
+
+
+
+
+
+
+
 
 
 
